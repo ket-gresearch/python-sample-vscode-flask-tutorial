@@ -28,3 +28,13 @@ steps:
     pip install pytest pytest-azurepipelines
     pytest
   displayName: 'pytest'
+
+- script: |
+    pwd
+  displayName: 'check currenty directory'
+
+- script: |
+    cd hello_app
+    set FLASK_APP=webapp
+    flask run
+  displayName: 'run flash app'

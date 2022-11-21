@@ -4,7 +4,7 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/python
 
 trigger:
-- main
+- master
 
 pool:
   vmImage: ubuntu-latest
@@ -36,10 +36,12 @@ steps:
 
 - script: |
     python -m pip install flask
-  displayName: 'check currenty directory'
+  displayName: 'install flask'
 
 - script: |
+    dir
     cd hello_app
-    set FLASK_APP=webapp
-    flask run
+    pwd
+    dir
+    python -m flask run
   displayName: 'run flash app'

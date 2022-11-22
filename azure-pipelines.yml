@@ -43,5 +43,5 @@ steps:
     cd hello_app
     pwd
     dir
-    python -m flask run
+    FLASK_APP=webapp
   displayName: 'run flash app'

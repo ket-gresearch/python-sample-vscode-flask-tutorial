@@ -44,4 +44,7 @@ steps:
     pwd
     dir
     FLASK_APP=webapp
-  displayName: 'run flash app'
+    flask run
+  displayName: 'set env and run flask app'
+
+  

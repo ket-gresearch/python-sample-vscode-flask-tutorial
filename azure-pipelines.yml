@@ -43,8 +43,6 @@ steps:
     cd hello_app
     pwd
     dir
-    FLASK_APP=webapp
-    flask run webapp.py
+    export FLASK_APP=webapp
+    flask run
   displayName: 'set env and run flask app'
-
-  

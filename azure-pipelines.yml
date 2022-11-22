@@ -40,9 +40,7 @@ steps:
 
 - script: |
     dir
-    cd hello_app
     pwd
-    dir
     export FLASK_APP=webapp
     flask run
   displayName: 'set env and run flask app'
